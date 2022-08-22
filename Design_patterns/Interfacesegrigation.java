@@ -1,4 +1,3 @@
-
 interface Resturent{
 	void vegMeals() ;
 	void nonVegMeals();
