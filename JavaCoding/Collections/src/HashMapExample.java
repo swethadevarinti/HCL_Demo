@@ -2,10 +2,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 public class HashMapExample {
-
-
 	public static HashMap<String, Integer> sortByValue(HashMap<String, Integer> hm){
 
 		HashMap<String, Integer> temp
