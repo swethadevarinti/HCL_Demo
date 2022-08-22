@@ -34,6 +34,7 @@ public class IGInfo {
 		//find min value from the list 
 		int min = 	list.stream().mapToInt(x->x).min().getAsInt();
 		System.out.println("min::::::::::::::::::::::"+min);
+		int sum = list.stream().mapToInt(x->x).sum();
 
 		// To get thired saturday of every month
 		

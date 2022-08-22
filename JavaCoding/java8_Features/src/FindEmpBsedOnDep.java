@@ -31,6 +31,11 @@ class Employee{
 		this.name=name;
 		this.dep=dep;
 	}
+	
+	public String toString() {
+		return dep;
+		
+	}
 }
 public class FindEmpBsedOnDep {
 
@@ -46,8 +51,12 @@ public class FindEmpBsedOnDep {
 		emplist.add(new Employee(105,"Amit","CS"));
 		emplist.add(new Employee(106,"Himanshu","CS"));
 		
-		Map<String, Long> list = emplist.stream().collect(Collectors.groupingBy(Employee::getDep, Collectors.counting()));
+		Map<String, Long> list = emplist.stream().collect(Collectors.groupingBy(Employee::getName, Collectors.counting()));
 		
+		List list1 = emplist.stream().filter(s -> s.getName().equals("Harshad")).collect(Collectors.toList());
+		System.out.println(list1.get(1).toString());
+		
+		//System.out.println("num    :"+num);
 		System.out.println("list       :"+list);
 		
 		
