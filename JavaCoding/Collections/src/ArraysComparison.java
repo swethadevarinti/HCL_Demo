@@ -3,9 +3,6 @@ import java.util.Collections;
 import java.util.LinkedHashSet;
 
 public class ArraysComparison {
-
-
-
 	public static Integer[] removeDuplicates(Integer[] a)
 	{
 		LinkedHashSet<Integer> set    = new LinkedHashSet<Integer>();
